@@ -20,7 +20,7 @@ To run this project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/supermarket-play.git
+   git clone https://github.com/your-username/emergency-play.git
 
 2. Open index.html file
 
