@@ -6,18 +6,7 @@ This project was created as a playful way for my fiancée's nephew to experience
 
 The goal was to combine fun and learning, helping to spark interest in technology while working hands-on with a real-world scenario. As a developer, I believe in making technology accessible and fun, especially for younger generations.
 
-## Features
 
-- Product registration page.
-- Product listing.
-- Simulation of adding products to the cart.
-- Simple checkout interface.
-
-## Demo
-
-You can check out the demo by clicking [here]([https://your-demo-link.com](https://teixeira308.github.io/supermarket-play/)).
-
-![Product Listing Screenshot](https://i.imgur.com/o6jq6PN.jpeg)
 
 ## Technologies Used
 
