@@ -1,0 +1,124 @@
+body{
+    background-color: red;
+  
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+.card-geral{
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+    border-radius: 30px;
+    
+}
+
+
+.card-caso {
+   
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#resultado-remedios {
+    margin-top: 15px;
+    font-weight: bold;
+    
+}
+
+#resultado-classificacao{
+    margin-top: 15px;
+    font-weight: bold;
+    color:red;
+    font-size: 65px;
+    animation: blink 1s infinite;
+}
+
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.timer{
+    font-size: 60px;
+}
+
+.step label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;  /* Espaçamento entre as opções */
+}
+
+.step label input {
+    margin-right: 10px;  /* Espaçamento entre o checkbox e o texto */
+}
+
+button {
+    margin-top: 20px; /* Espaçamento acima do botão */
+}
+
+.radios{
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+    border-radius: 30px;
+    height: 50%;
+   
+   
+}
+
+.classificacao-container {
+    display: flex;
+    flex-direction: column; /* Organiza os itens em uma coluna */
+}
+
+.classificacao-container label {
+    display: flex; /* Usando flexbox para alinhar o conteúdo */
+    align-items: center; /* Alinha verticalmente no centro */
+    margin-bottom: 10px; /* Espaçamento entre os labels */
+}
+
+.classificacao-container input[type="radio"] {
+    margin-right: 10px; /* Espaçamento entre o radio e o label */
+    padding-right: 150px ;
+}

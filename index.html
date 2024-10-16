@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency-app</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+ 
+   
+ <div class="card-geral">
+ 
+    <div id="step-1">
+        <h3>Ocorrência:</h3>
+        <p id="ocorrencia"></p>
+        <h3>Classifique a ocorrência:</h3>
+        
+            <label>
+                <input type="radio" name="classificacao" value="Emergência" id="classificacao-emergencia">
+                Emergência
+            </label>
+            <label>
+                <input type="radio" name="classificacao" value="Muito Grave" id="classificacao-muito-grave" class="radios">
+                Muito Grave
+            </label>
+            <label>
+                <input type="radio" name="classificacao" value="Grave" id="classificacao-grave" class="radios">
+                Grave
+            </label>
+            <label>
+                <input type="radio" name="classificacao" value="Leve" id="classificacao-leve" class="radios">
+                Leve
+            </label>
+        
+        <br>
+        <button onclick="irParaProximoPasso()">Próximo</button>
+    </div>
+    
+    
+    <div id="step-2" class="step-2" style="display: none;">
+        <h3>Selecione os remédios para levar:</h3>
+        <label>Água Oxigenada
+        <input type="checkbox" name="remedio" value="Água Oxigenada"></label>
+        <br><br>
+        <label>Curativo
+        <input type="checkbox" name="remedio" value="Curativo"></label>
+        <br><br>
+        <label> 
+            
+            Gelo<input type="checkbox" name="remedio" value="Gelo">
+        </label>
+       
+        <br><br>
+        <label> Paracetamol Infantil
+        <input type="checkbox" name="remedio" value="Paracetamol Infantil"></label>
+        <br><br>
+        <label>
+            
+            Band-aid
+        
+        <input type="checkbox" name="remedio" value="Band-aid"></label>
+        <br><br>
+        <label>
+            
+            Água Oxigenada
+        <input type="checkbox" name="remedio" value="Paracetamol Infantil"></label>
+        <br><br>
+        <label>
+            
+            Gaze
+         <input type="checkbox" name="remedio" value="gaze"></label>
+        <br><br>
+        <label>
+            
+            Xarope infantil
+        <input type="checkbox" name="remedio" value="Xarope infantil"></label>
+        <br><br>
+        <label>
+           
+            Remédio de Super-Herói 
+         <input type="checkbox" name="remedio" value="Remédio de Super-Herói "></label>
+        <br><br>
+        <label>
+            
+            Xarope de Mel
+         <input type="checkbox" name="remedio" value="Xarope de Mel"></label>
+        <br><br>
+        <label>
+            
+            Colírio
+        <input type="checkbox" name="remedio" value="Colírio"></label>
+        <br><br>
+        <label>
+            
+            Spray antisséptico
+        <input type="checkbox" name="remedio" value="Spray antisséptico"></label>
+        <br><br>
+        <label>
+            
+            Pirulito
+         <input type="checkbox" name="remedio" value="Pirulito"></label>
+        <br><br>
+        <label>
+            
+            Soro fisiológico
+        <input type="checkbox" name="remedio" value="Soro fisiológico"> </label>
+    
+        <br><br>
+        <button onclick="iniciarAtendimento()">Iniciar Atendimento</button>
+    </div>
+    
+    <div id="step-3" class="step" style="display: none;">
+        <p id="resultado-classificacao"></p>
+        <p>Leve os remédios:</p>
+        <span id="resultado-remedios"></span>
+        <p id="timer" class="timer">--:--</p>
+        <button id="reset-btn"  onclick="reiniciarFluxo()">Emergência atendida!</button>
+        <div class="tenor-gif-embed" data-postid="21405079" data-share-method="host" data-aspect-ratio="1" data-width="100%"><a href="https://tenor.com/view/ambulance-ambulanceemoji-emergency-emergency-vehicles-aminatedgif-gif-21405079">Ambulance Ambulanceemoji GIF</a>from <a href="https://tenor.com/search/ambulance-gifs">Ambulance GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+    </div>
+    
+</div>
+    
+
+</body>
+</html>
